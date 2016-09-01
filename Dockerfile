@@ -1,4 +1,4 @@
-FROM quay.io/coreos/hyperkube:v1.3.5_coreos.0
+FROM quay.io/coreos/hyperkube:v1.3.6_coreos.0
 
 RUN curl https://raw.githubusercontent.com/ceph/ceph/master/keys/release.asc | apt-key add - && \
     echo deb http://download.ceph.com/debian-jewel/ jessie main | tee /etc/apt/sources.list.d/ceph.list && \
